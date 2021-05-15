@@ -300,6 +300,33 @@ html {
 .footer-bottom p {
   margin: 0;
 }
+.show-up-btn {
+  opacity: 1 !important;
+}
+.scroll-up:hover {
+  color: #fff !important;
+}
+.scroll-up {
+  position: fixed;
+  font-size: 28px;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 38px;
+  color: #fafafa;
+  border: 2px solid #333;
+  background-color: #333;
+  bottom: 25px;
+  right: 30px;
+  opacity: 0;
+  z-index: 60;
+}
+.effect {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
 /*================Media Query====================*/
 @media (max-width: 767px){
   #navbar {
