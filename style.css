@@ -3,11 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
   
-  html {
+html {
   scroll-behavior: smooth;
 }
-  
- #navbar {
+#navbar {
   overflow: hidden;
   padding: 8px 0;
   transition: 0.4s;
@@ -16,7 +15,6 @@ body {
   top: 0;
   z-index: 99;
 }
-
 #navbar a {
   float: left;
     text-align: center;
@@ -26,23 +24,19 @@ body {
     color: #fff;
     padding-bottom: 3px;
 }
-
 #navbar #logo {
   font-size: 35px;
   font-weight: bold;
   transition: 0.4s;
 }
-
 #navbar a:hover {
   color: #fff;
 
 }
-
 #navbar a.active {
   border-bottom: 3px solid;
   color: white;
 }
-
 #navbar-right {
   float: right;
 }
@@ -52,7 +46,6 @@ body {
     outline: none;
     border: 2px solid #fff;
 }
-
 .navbar-inv .navbar-toggle {
     border-color: #333;
 }
@@ -71,8 +64,7 @@ body {
   #services {padding: 80px 0 60px 0;}
   #portfolio {background-color: #efefef;padding: 80px 0 0 0;text-align: center;}
   #footer {background-color: #2a2a2e;padding: 50px 0 50px 0;}
-  
- #home {
+#home {
   position: relative;
   text-align: center;
   color: white;
@@ -83,7 +75,6 @@ body {
     background-position: center;
     background-size: cover;
 }
-
 #home h1{
   font-weight: 600;
   margin-bottom: 20px;
@@ -108,16 +99,9 @@ body {
     box-shadow: 0 4px 8px rgb(0 0 0 / 52%);
 	margin-bottom: 40px;
 }
-  .txt-rotate > .wrap{
+.txt-rotate > .wrap{
     border-right: none !important
-  }
-  /* .social-media { */
-  /* position: absolute; */
-  /* top: 65%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* z-index: 9999; */
-/* } */
+}
 .social-media {
     margin-top: 20px;
 }
@@ -130,7 +114,7 @@ body {
 	padding:0;
   display:inline;
 }
-  .social-icons li a {
+.social-icons li a {
     font-size: 18px;
 	color:#212529;
 }
@@ -154,7 +138,6 @@ body {
 }
 /*=======About=========*/
 #about strong {
-  font-family: 'Kaushan Script', cursive;
   font-size: 18px !important;
 }
 #about h4 {
@@ -172,6 +155,84 @@ body {
   color: #000;
   font-weight: bold;
 }
+/*================Progressbar==========================*/
+.progress_bar_wrap_total{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
+.marox_tm_progress_wrap[data-size="big"] .marox_tm_progress .marox_tm_bar_bg{height:40px;}
+.marox_tm_progress_wrap[data-size="small"] .marox_tm_progress .marox_tm_bar_bg{height:5px;}
+
+.marox_tm_progress_wrap[data-round="a"] .marox_tm_progress .marox_tm_bar_bg,
+.marox_tm_progress_wrap[data-round="a"] .marox_tm_progress .marox_tm_bar{
+	border-radius:2px;
+}
+.marox_tm_progress_wrap[data-round="b"] .marox_tm_progress .marox_tm_bar_bg,
+.marox_tm_progress_wrap[data-round="b"] .marox_tm_progress .marox_tm_bar{
+	border-radius:5px;
+}
+.marox_tm_progress_wrap[data-round="c"] .marox_tm_progress .marox_tm_bar_bg,
+.marox_tm_progress_wrap[data-round="c"] .marox_tm_progress .marox_tm_bar{
+	border-radius:50px;
+}
+.marox_tm_progress{
+	width:100%;
+	margin-bottom:25px;
+}
+.marox_tm_progress > span{
+	margin:0px 0px 3px 0px;
+	width:100%;
+	display:block;
+	text-align:left;
+}
+.marox_tm_progress span.label{
+	font-weight:800;
+	color:#000;
+	font-family: "Montserrat";
+}
+.marox_tm_progress span.number{
+	float:right;
+	color:#000;
+	font-weight: 800;
+	font-family: "Montserrat";
+}
+.marox_tm_progress .marox_tm_bar_bg{
+	background:rgba(0,0,0,.1);
+	width:100%;
+	min-width:100%;
+	position:relative;
+	height:20px;
+}
+.marox_tm_progress .marox_tm_bar_bg .marox_tm_bar_wrap{
+	width:0px;
+	height:100%;
+}
+.marox_tm_progress .marox_tm_bar_bg .marox_tm_bar_wrap.open{
+	animation: marox_tm_expand 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
+	width:100%;	
+}
+.marox_tm_progress .marox_tm_bar_bg .marox_tm_bar{
+	height:100%;
+	background:#333;
+	width:0px;
+	overflow:hidden;
+}
+.marox_tm_progress_wrap[data-strip="on"] .marox_tm_progress .marox_tm_bar{
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+	animation: marox_tm_bar_move 4s linear infinite;
+	background-size: 50px 50px;
+}
+@-webkit-keyframes marox_tm_bar_move {0%{background-position: 0 0;} 100% {background-position: 50px 50px;}}
+@-moz-keyframes marox_tm_bar_move {0%{background-position: 0 0;} 100% {background-position: 50px 50px;}}
+@keyframes marox_tm_bar_move {0%{background-position: 0 0;} 100% {background-position: 50px 50px;}}
+/*expand width animation*/
+@-webkit-keyframes marox_tm_expand {0%{ width:0%; } 100%{ width:100%; }}
+@-moz-keyframes marox_tm_expand {0%{ width:0%; } 100%{ width:100%; }}
+@keyframes marox_tm_expand {0%{ width:0%; } 100%{ width:100%; }}
 /*=======Services=========*/
 .services-head{
 	color:#000;
@@ -194,75 +255,7 @@ body {
 .shadow {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
-.progress {
-    display: -ms-flexbox;
-    display: flex;
-    height: 1rem;
-    overflow: hidden;
-    line-height: 0;
-    font-size: .75rem;
-    background-color: #e9ecef;
-    border-radius: .25rem;
-    margin: 15px 0;
-}
-.progress-bar {
-  width: 0;
-  animation: progress 2.5s ease-in-out forwards;
-} 
-.title {
-    opacity: 0;
-    animation: show 0.5s forwards ease-in-out 0.5s;
-}
-/*=============================*/
-
-@keyframes progress {
-  from {
-    width: 0;
-   }
-  to {
-    width: 100%;
-  }
-} 
-@keyframes show  {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/*===============datafilter=====================*/
-#myBtnContainer {
-    margin-bottom: 20px;
-}
-.column {
-  float: left;
-  /*width: 33.33%;*/
-  display: none; 
-}
-.content {
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-.show {
-  display: block;
-}
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: #ddd;
-}
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-/*===============datafilter====================*/
+/*===============footer====================*/
 .footer-bottom {
     font-size: 14px;
     text-align: center;
@@ -307,10 +300,10 @@ body {
 .footer-bottom p {
   margin: 0;
 }
-/*====================================*/
+/*================Media Query====================*/
 @media (max-width: 767px){
   #navbar {
-    background-color: rgb(52,54,68,1) !important;
+    background-color: rgb(42,42,46,0.7) !important;
   }
   .about-details h1 {
     text-align: center;
@@ -321,7 +314,10 @@ body {
 }
 
   .nerdy-pen h1 {
-    font-size: 30px !important;
+    font-size: 38px !important;
+}
+#home h2 {
+    font-size: 30px;
 }
 
 #skill-bar-wrapper {
@@ -343,7 +339,6 @@ body {
   #navbar-right {
     float: none;
   }
-}
  #particle {
   background-color: #b61924;
   position:fixed;
@@ -356,52 +351,9 @@ body {
 #overlay {
   position: relative;
 }
-/*================Progressbar==========================*/
-.skillbar-container {
-  position:relative;
-  display:block;
-  /* margin-bottom: 18px;    */
-  width: 100%;
-  background-color: #ddd;
-  height:35px;
-  height:5px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+#about h4 {
+    font-weight: 800;
+    font-size: 22px;
 }
-  
-.skills {
-  height:35px;
-  height:5px;
-  width:0px;
-}
-/*=============*/
-.show-up-btn {
-    opacity: 1;
-}
-.scroll-up {
-    position: fixed;
-    font-size: 28px;
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    line-height: 38px;
-    color: #fff;
-    border: 2px solid #333;
-    background-color: #333;
-    bottom: 25px;
-    right: 30px;
-    z-index: 60;
-}
-.effect {
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-.scroll-top a:hover {
-    color: #fff !important;
-}
-a .scroll-up i :hover {
-    color: #fff !important;
 }
 
