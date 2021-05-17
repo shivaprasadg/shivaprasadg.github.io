@@ -68,8 +68,7 @@ html {
   position: relative;
   text-align: center;
   color: white;
-    height: 100%;
-    min-height: 550px;
+    height: 700px;
     background-image: url(image/home-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -246,7 +245,9 @@ html {
     margin: 10px 0;
 }
 .service-title {
-    font-weight: 500;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 .description {
     padding: 2em;
@@ -320,12 +321,6 @@ html {
   right: 30px;
   opacity: 0;
   z-index: 60;
-}
-.effect {
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
 /*================Media Query====================*/
 @media (max-width: 767px){
